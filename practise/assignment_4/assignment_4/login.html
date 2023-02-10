@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta name="viewport" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <script type="text/javascript" src="login.js"></script>
+  <body>
+    <form action="/assignment_4/message.html" onsubmit="return login()">
+      <div class="heading">
+        <center><h2>Student Login Form</h2></center>
+      </div>
+      <div class="container">
+        <div class="subrow>" >
+          <label>Username : </label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="username" id="username"
+            required
+          />
+        </div>
+        <div class="subrow>">
+          <label>Password : </label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="password" id="password"
+            required
+          />
+        </div>
+        <div class="subrow>">
+          <button type="submit" class="buttons">Login</button>
+          <button type="button" class="buttons" onclick="cancel()">Cancel</button>
+        </div>
+        
+      </div>
+    </form>
+  </body>
+</html>
